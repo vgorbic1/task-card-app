@@ -13,6 +13,10 @@ var task_1 = require('../model/task');
 var CardComponent = (function () {
     function CardComponent() {
     }
+    CardComponent.prototype.statusToggle = function () {
+        // set it to what it is not now (toggling)
+        this.task.completed = !this.task.completed;
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', task_1.Task)
